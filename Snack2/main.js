@@ -44,7 +44,7 @@ for(i=0;i<squadre.length;i++){
     squadre[i]['punti']=random(100)
     squadre[i]["falliSubiti"]=random(50)
     let {nome, falliSubiti }= squadre[i]
-    squadre2.push([nome, falliSubiti])
+    squadre2.push({nome, falliSubiti})
     stampa.innerHTML+=
     `<div class="squadre">
         il nome della squadra è ${nome} <br>
