@@ -38,7 +38,7 @@ for(i=0; i<bici.length; i++){
     
 }
 console.log(pesoMinore)
-
+let{nome, peso}=pesoMinore;
 stampa.innerHTML=`
-la bici col peso minore è ${pesoMinore.nome} col peso di ${pesoMinore.peso}
+la bici col peso minore è ${nome} col peso di ${peso}
 `
