@@ -14,13 +14,14 @@ let bici=[
         'peso':'1950gr'
     },
     {
-        'nome':'cosa con due ruote',
-        'peso':'1740gr'
-    },
-    {
         'nome':'velociraptor',
         'peso':'850gr'
+    },
+    {
+        'nome':'cosa con due ruote',
+        'peso':'1740gr'
     }
+
 
 ]
 
@@ -31,7 +32,7 @@ let pesoMinore =bici[0]
 for(i=0; i<bici.length; i++){
     stampa2.innerHTML+=`<p>${[i+1]}) ${bici[i].nome} ${bici[i].peso}</p>`
     let x= bici[i]
-    if(pesoMinore['peso']<x['peso']){
+    if(pesoMinore['peso'] < x['peso'] ){
         pesoMinore=x
     }
     
