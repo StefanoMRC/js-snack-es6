@@ -24,6 +24,8 @@
    let stampa1=document.getElementById("cont1")
    let stampa2=document.getElementById("cont2")
    let stampa3=document.getElementById("cont3")
+   let stampa4=document.getElementById("cont4")
+   let stampa5=document.getElementById("cont5")
 
 //    students.forEach((element,index) => {
 //     console.log(element.name)
@@ -51,7 +53,16 @@ arrayVoti.forEach((element, index) => {
 });
 
 
+let arrayVoti2=students.filter(
+    (element)=>element.id>120 && element.grades>70
+    )
+
+console.log(arrayVoti2)
 
 
+arrayVoti2.forEach((element, index) => {
+    stampa4.innerHTML=`gli studenti con voto maggiore di 70 e id superiore a 120 sono:`
+    stampa5.innerHTML+=`<li>${arrayVoti2[index].name} con voto ${arrayVoti2[index].grades} con id ${arrayVoti2[index].id}</li> `
+});
 
 
